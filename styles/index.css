@@ -7,10 +7,62 @@
   padding:1px;
   margin: 1px;
 /* margin: 5rem(rgba(52, 88, 120, 0.397)); */
-background-color: rgba(15, 15, 22, 0.705);
+background-color:#808383be;
 color: whitesmoke;
 }
 
+
+#content-container {
+  padding: 20px;
+  /* background-color: #f1f1f1; */
+}
+
+#content-container h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+#content-container p {
+  font-size: 16px;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 767px) {
+  #content-container {
+    padding: 10px;
+  }
+
+  #content-container h1 {
+    font-size: 20px;
+  }
+
+  #content-container p {
+    font-size: 14px;
+  }
+}
+
+#content-container:hover h1,
+#content-container:hover p {
+  color: #e7e7e7;
+  transform: scale(1.1);
+  animation-name: myAnimation;
+  animation-duration: 1s;
+}
+
+@keyframes myAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Style for video above texts ends here */
 .brand-title p {
   font-size: 22px;
   color: rgb(255, 0, 0);
