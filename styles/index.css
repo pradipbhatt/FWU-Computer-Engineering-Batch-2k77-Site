@@ -442,10 +442,7 @@ html {
     
   }
    
-  .welcome-main-content p {
-    font-size: 14px; /* Adjust the font size as needed */
-    margin: 1px; /* Adjust the margin as needed */
-  }
+
   .welcome-main-content img {
    max-width: 100%;
    border-radius: 0px 0px;
@@ -497,7 +494,27 @@ html {
     /* border: 5px solid red; */
   }
 }
+.welcome-main-content p {
+  font-size: 21px; /* Default font size */
+  margin: 4px; /* Default margin */
+  padding: 10px;
+}
 
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .welcome-main-content p {
+    font-size: 12px; /* Decrease font size for smaller screens */
+    margin: 0; /* Adjust margin as needed for smaller screens */
+  }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+  .welcome-main-content p {
+    font-size: 10px; /* Decrease font size further for even smaller screens */
+    margin: 0; /* Adjust margin as needed for even smaller screens */
+  }
+}
 
 #carouselExampleIndicators{
 font-family:'Times New Roman', Times, serif;
@@ -557,11 +574,6 @@ transform: scale(1.05) translateY(.125rem);
   transform: scale(1.05) translateY(.125rem);
   text-decoration: none;
   }
-.welcome-main-content p {
-  font-size: 20px; /* Adjust the font size as needed */
-  margin: 1px; /* Adjust the margin as needed */
-  padding: 25px;
-}
 
 @keyframes rotation {
   from {
