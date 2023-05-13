@@ -576,6 +576,9 @@ Far Western University offers scholarships on various bases. For scholarships pl
     setWidth("underline", getWidth("welcome"));
 </script>
 
+
+
+
 <script src="https://www.youtube.com/iframe_api"></script>
 <script>
   var player;
@@ -607,6 +610,14 @@ Far Western University offers scholarships on various bases. For scholarships pl
   function onPlayerReady(event) {
     event.target.playVideo(); // Play the video automatically
     event.target.setPlaybackQuality('hd720'); // Set video quality to 720p
+
+    // Mute the video by default
+    event.target.mute();
+
+    // Unmute the video after 1 second (adjust as needed)
+    setTimeout(function() {
+      event.target.unMute();
+    }, 1000);
   }
 
   function onPlayerStateChange(event) {
@@ -631,6 +642,8 @@ Far Western University offers scholarships on various bases. For scholarships pl
 
   onYouTubeIframeAPIReady();
 </script>
+
+
 
 
 
